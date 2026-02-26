@@ -65,20 +65,20 @@ canvas{width:100%!important}
     </div>
     <div class="header-right">
       <div class="update-label"><span class="live-dot"></span>Frissítve</div>
-      <div class="update-time">2026.02.26 10:00</div>
+      <div class="update-time">2026.02.26 11:00</div>
     </div>
   </div>
   <div class="main-grid fade-in">
     <div class="current-card">
       <div class="weather-emoji">☀️</div>
-      <div class="temp-big">5.4<span>°C</span></div>
+      <div class="temp-big">6.4<span>°C</span></div>
       <div class="weather-desc">Tiszta égbolt</div>
     </div>
     <div class="stats-grid">
-      <div class="stat-card"><div class="stat-icon">🌡️</div><div class="stat-label">Érzett hőmérséklet</div><div class="stat-value">1.8<span class="stat-unit">°C</span></div></div>
-      <div class="stat-card"><div class="stat-icon">💧</div><div class="stat-label">Páratartalom</div><div class="stat-value">50<span class="stat-unit">%</span></div></div>
-      <div class="stat-card"><div class="stat-icon">🌬️</div><div class="stat-label">Szélsebesség</div><div class="stat-value">6.5<span class="stat-unit">km/h</span></div></div>
-      <div class="stat-card"><div class="stat-icon">☀️</div><div class="stat-label">UV Index</div><div class="stat-value">2.15</div></div>
+      <div class="stat-card"><div class="stat-icon">🌡️</div><div class="stat-label">Érzett hőmérséklet</div><div class="stat-value">3.1<span class="stat-unit">°C</span></div></div>
+      <div class="stat-card"><div class="stat-icon">💧</div><div class="stat-label">Páratartalom</div><div class="stat-value">49<span class="stat-unit">%</span></div></div>
+      <div class="stat-card"><div class="stat-icon">🌬️</div><div class="stat-label">Szélsebesség</div><div class="stat-value">5.4<span class="stat-unit">km/h</span></div></div>
+      <div class="stat-card"><div class="stat-icon">☀️</div><div class="stat-label">UV Index</div><div class="stat-value">2.85</div></div>
     </div>
   </div>
   <div class="minmax-row fade-in">
@@ -89,14 +89,14 @@ canvas{width:100%!important}
     <div class="ai-avatar">🤖</div>
     <div>
       <div class="ai-label">AI Öltözködési tanács</div>
-      <div class="ai-text">Ezen a hűvös, de nem esős napon viseljen meleg, de légáteresztő ruhákat, valamint vigyen magával egy vékony kabátot a szél ellen. A 50%-os páratartalom miatt érdemes olyan ruhát választani, amely jól szellőzik.</div>
+      <div class="ai-text">Viseljen réteges, meleg ruházatot, hogy kompenzálja az alacsony hőmérsékletet és a szélhatást. Egy vízálló kabát vagy dzseki is hasznos lehet a szél ellen.</div>
     </div>
   </div>
   <div class="chart-card fade-in">
     <div class="chart-header">
       <div>
         <div class="chart-title">Hőmérséklet változása</div>
-        <div class="chart-subtitle">02. 26. 02:00 – 02. 26. 13:00</div>
+        <div class="chart-subtitle">02. 26. 03:00 – 02. 26. 14:00</div>
       </div>
       <div class="chart-legend">
         <span><span class="legend-dot" style="background:#FF6B00"></span>Hőmérséklet</span>
@@ -105,11 +105,11 @@ canvas{width:100%!important}
     </div>
     <div class="chart-area"><canvas id="tempChart"></canvas></div>
   </div>
-  <div class="footer fade-in">Budapest Időjárás · Frissítve: 2026.02.26 10:00 · Open-Meteo API</div>
+  <div class="footer fade-in">Budapest Időjárás · Frissítve: 2026.02.26 11:00 · Open-Meteo API</div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 <script>
-new Chart(document.getElementById('tempChart').getContext('2d'),{type:'line',data:{labels:["02. 26. 02:00","02. 26. 03:00","02. 26. 04:00","02. 26. 05:00","02. 26. 06:00","02. 26. 07:00","02. 26. 08:00","02. 26. 09:00","02. 26. 10:00","02. 26. 11:00","02. 26. 12:00","02. 26. 13:00"],datasets:[{label:'Hőmérséklet',data:[4,3.5,3.1,2.7,2.6,2.5,3.1,4.3,5.4,6.3,7.4,8.3],borderColor:'#FF6B00',backgroundColor:'rgba(255,107,0,0.12)',borderWidth:2.5,pointBackgroundColor:'#FF6B00',pointRadius:4,fill:true,tension:0.4},{label:'Érzett',data:[0.6,0.6,0.2,-0.2,-0.4,-0.7,-0.1,0.7,1.8,3,4.3,5.2],borderColor:'#74b9ff',backgroundColor:'rgba(116,185,255,0.06)',borderWidth:2,pointBackgroundColor:'#74b9ff',pointRadius:3,fill:true,tension:0.4,borderDash:[4,3]}]},options:{responsive:true,maintainAspectRatio:false,interaction:{intersect:false,mode:'index'},plugins:{legend:{display:false},tooltip:{backgroundColor:'rgba(26,10,0,0.95)',borderColor:'rgba(255,107,0,0.3)',borderWidth:1,titleColor:'#FFB347',bodyColor:'#FFF5E6',padding:10}},scales:{x:{grid:{color:'rgba(255,107,0,0.07)'},ticks:{color:'rgba(255,245,230,0.45)',font:{size:10},maxRotation:30},border:{color:'rgba(255,107,0,0.15)'}},y:{grid:{color:'rgba(255,107,0,0.07)'},ticks:{color:'rgba(255,245,230,0.45)',font:{size:11},callback:v=>v+'°'},border:{color:'rgba(255,107,0,0.15)'}}}}});
+new Chart(document.getElementById('tempChart').getContext('2d'),{type:'line',data:{labels:["02. 26. 03:00","02. 26. 04:00","02. 26. 05:00","02. 26. 06:00","02. 26. 07:00","02. 26. 08:00","02. 26. 09:00","02. 26. 10:00","02. 26. 11:00","02. 26. 12:00","02. 26. 13:00","02. 26. 14:00"],datasets:[{label:'Hőmérséklet',data:[3.5,3.1,2.7,2.6,2.5,3.2,4.3,5.4,6.4,7.4,8.3,8.9],borderColor:'#FF6B00',backgroundColor:'rgba(255,107,0,0.12)',borderWidth:2.5,pointBackgroundColor:'#FF6B00',pointRadius:4,fill:true,tension:0.4},{label:'Érzett',data:[0.6,0.2,-0.2,-0.4,-0.3,0.1,1,1.8,3.1,4.3,5,5.6],borderColor:'#74b9ff',backgroundColor:'rgba(116,185,255,0.06)',borderWidth:2,pointBackgroundColor:'#74b9ff',pointRadius:3,fill:true,tension:0.4,borderDash:[4,3]}]},options:{responsive:true,maintainAspectRatio:false,interaction:{intersect:false,mode:'index'},plugins:{legend:{display:false},tooltip:{backgroundColor:'rgba(26,10,0,0.95)',borderColor:'rgba(255,107,0,0.3)',borderWidth:1,titleColor:'#FFB347',bodyColor:'#FFF5E6',padding:10}},scales:{x:{grid:{color:'rgba(255,107,0,0.07)'},ticks:{color:'rgba(255,245,230,0.45)',font:{size:10},maxRotation:30},border:{color:'rgba(255,107,0,0.15)'}},y:{grid:{color:'rgba(255,107,0,0.07)'},ticks:{color:'rgba(255,245,230,0.45)',font:{size:11},callback:v=>v+'°'},border:{color:'rgba(255,107,0,0.15)'}}}}});
 </script>
 </body>
 </html>
